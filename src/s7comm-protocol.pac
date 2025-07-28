@@ -287,12 +287,12 @@ type ROSCTR_ACK(is_orig: bool) = record {
     parameter_length:   uint16;
     data_length:        uint16;
     error_data:         S7Comm_Error;
-    function_code:      uint8;
     additional_data:    bytestring &restofdata;
 } &let {
     is_originator: bool = is_orig;
     error_class:        uint8 = error_data.error_class;
     error_code:         uint8 = error_data.error_code;
+    function_code       = 0xff; 
     deliver: bool = $context.flow.process_rosctr_ack(this);
 } &byteorder=bigendian;
 
