@@ -1,3 +1,10 @@
+# Build Status
+
+| Source       | `main` Status | `main` Timestamp |
+|--------------|--------------|------------|
+| **CISAGOV** | ![Build Status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcisagov%2Ficsnpp-s7comm%2Fcommits%2Fmain%2Fstatus&query=state&label=build) | ![Last Build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcisagov%2Ficsnpp-s7comm%2Fcommits%2Fmain%2Fstatus&query=statuses[0].updated_at&label=last%20build&color=lightgrey) |
+| **Development** | ![Build Status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fparsitects%2Ficsnpp-s7comm%2Fcommits%2Fmain%2Fstatus&query=state&label=build) | ![Last Build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fparsitects%2Ficsnpp-s7comm%2Fcommits%2Fmain%2Fstatus&query=statuses[0].updated_at&label=last%20build&color=lightgrey) |
+
 # ICSNPP-S7COMM
 
 Industrial Control Systems Network Protocol Parsers (ICSNPP) - s7comm, s7comm-plus, and COTP.
@@ -278,40 +285,6 @@ The general log files for COTP (cotp.log), S7Comm (s7comm.log), and S7Comm Plus 
 Detailed logging for 1 S7comm function is logged in the read szl log file (s7comm_read_szl.log), 6 S7Comm functions are logged in the upload download log file (s7comm_upload_download.log), and 5 S7comm functions are logged as part of the general S7comm log file (s7comm.log). ~30% of known S7comm functions contain detailed logging.
 
 There is currently no (0%) detailed logging for S7Comm Plus functions outside of the S7Comm Plus general/header log file (s7comm_plus.log).
-
-## ICSNPP Packages
-
-All ICSNPP Packages:
-* [ICSNPP](https://github.com/cisagov/icsnpp)
-
-Full ICS Protocol Parsers:
-* [BACnet](https://github.com/cisagov/icsnpp-bacnet)
-    * Full Zeek protocol parser for BACnet (Building Control and Automation)
-* [BSAP](https://github.com/cisagov/icsnpp-bsap)
-    * Full Zeek protocol parser for BSAP (Bristol Standard Asynchronous Protocol) over IP
-    * Full Zeek protocol parser for BSAP Serial comm converted using serial tap device
-* [Ethercat](https://github.com/cisagov/icsnpp-ethercat)
-    * Full Zeek protocol parser for Ethercat
-* [Ethernet/IP and CIP](https://github.com/cisagov/icsnpp-enip)
-    * Full Zeek protocol parser for Ethernet/IP and CIP
-* [GE SRTP](https://github.com/cisagov/icsnpp-ge-srtp)
-    * Full Zeek protocol parser for GE SRTP
-* [Genisys](https://github.com/cisagov/icsnpp-genisys)
-    * Full Zeek protocol parser for Genisys
-* [OPCUA-Binary](https://github.com/cisagov/icsnpp-opcua-binary)
-    * Full Zeek protocol parser for OPC UA (OPC Unified Architecture) - Binary
-* [S7Comm](https://github.com/cisagov/icsnpp-s7comm)
-    * Full Zeek protocol parser for S7comm, S7comm-plus, and COTP
-* [Synchrophasor](https://github.com/cisagov/icsnpp-synchrophasor)
-    * Full Zeek protocol parser for Synchrophasor Data Transfer for Power Systems (C37.118)
-* [Profinet IO CM](https://github.com/cisagov/icsnpp-profinet-io-cm)
-    * Full Zeek protocol parser for Profinet I/O Context Manager
-
-Updates to Zeek ICS Protocol Parsers:
-* [DNP3](https://github.com/cisagov/icsnpp-dnp3)
-    * DNP3 Zeek script extending logging capabilities of Zeek's default DNP3 protocol parser
-* [Modbus](https://github.com/cisagov/icsnpp-modbus)
-    * Modbus Zeek script extending logging capabilities of Zeek's default Modbus protocol parser
 
 ### License
 
